@@ -1,0 +1,18 @@
+## Syntax for text files
+
+syntax "text" "\.txt$"
+
+# Title
+color red "[[:blank:]]{3,5}[Anno|Collegio|Consiglio|Colloqui|English].*"
+
+# Comments
+color yellow "(^|[[:blank:]]?)#.*$"
+
+# Enumerations number
+color green "[[:blank:]]{2,4}[0-9].*"
+
+# Enumerations letter
+color brightmagenta "[[:blank:]]{3,5}[a-z].*"
+
+# Highlights
+color brightwhite,red start="\*" end="\*"

@@ -1,0 +1,13 @@
+## Here is a short example for TeX files.
+
+syntax "tex" "\.tex$"
+magic "(La)?TeX document"
+linter chktex -v0 -q -I
+comment "%"
+
+icolor green "\\.|\\[A-Z]*"
+color magenta "\\(begin)|\\(end)"
+color brightwhite,blue "\\(textbf)|\\(textit)|\\(textsc)|\\(tiny)|\\(small)|\\(large)|\\(LARGE)|\\(scshape)|\\(bfseries)|\\(itshape)"
+color red "[{}]"
+color yellow "\[|\]"
+color red "(^|[^\])%.*"
