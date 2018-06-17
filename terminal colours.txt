@@ -1,0 +1,13 @@
+									Colour palette for terminal
+
+						1) Text
+						#3FAABC
+
+						2) Username and host
+						#758467
+
+						3) Folders
+						#BDB37C
+
+						4) Files
+						#156274
